@@ -157,7 +157,7 @@ body {
   align-items: center;
   flex-direction: column;
 /*  background-image: url("./images/sidedesign.png");*/
-  padding-top: 50px;
+/*  padding-top: 50px;*/
   /*padding-left: 50px;
   padding-right: 50px;*/
 }
@@ -207,9 +207,9 @@ body {
 
 
 #Title-Text {
-  padding-left: 100px;
+  /*padding-left: 100px;
   padding-right: 100px;
-  padding-top: 50px;
+  padding-top: 50px;*/
 }
 
 #Event-Section img {
