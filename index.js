@@ -55,7 +55,7 @@ gsap.to("#Intro-Parent", {
     start: "bottom 70%",
     end: "bottom +=260vh",
     scrub: true,
-    markers:true
+    // markers:true
   }
 });
 
