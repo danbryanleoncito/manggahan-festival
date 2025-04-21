@@ -1,3 +1,17 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* or any background you want */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+
 body {
   background-color: #000000;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -124,13 +138,15 @@ body {
 }
 
 #Intro-Parent img {
-  padding-top: 100px;
-	height: 500px;
+  
+	width: 50%;
+  display: block;
 }
 
 #myVideo {
   width: 100%;
   height: 100vh;
+  display: flex;
 }
 
 #intro-page {
@@ -165,6 +181,7 @@ body {
 
 #Title-Text {
   top: 0%;
+  position: relative;
 }
 
 #Event-Section {

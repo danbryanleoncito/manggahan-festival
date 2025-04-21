@@ -91,3 +91,11 @@ ScrollTrigger.create({
 });
 
 
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    setTimeout(() => preloader.remove(), 1000); // Optional fade-out
+  }
+});
