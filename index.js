@@ -99,3 +99,15 @@ window.addEventListener('load', () => {
     setTimeout(() => preloader.remove(), 1000); // Optional fade-out
   }
 });
+
+gsap.to("#mainNavbar", {
+  backdropFilter: "blur(0px)",
+  backgroundColor: "rgba(255, 255, 255, 0)",
+  scrollTrigger: {
+    trigger: "#Sticky-Container",
+    start: "top 10%",
+    end: "bottom 70%",
+    scrub: true,
+    markers:true
+  }
+});
