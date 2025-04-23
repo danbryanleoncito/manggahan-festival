@@ -10,33 +10,34 @@
 
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent transition-navbar" id="mainNavbar">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#Background-Main">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#Event-Section">Events</a>
-      <a class="nav-item nav-link" href="#Schedule-Section">Schedule</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
-    </div>
-  </div>
-</nav>
-	</header>
 	<!-- Loading -->
 	<div id="preloader">
-	  <div class="spinner-border text-warning" role="status">
-	    <span class="visually-hidden">Loading...</span>
-	  </div>
+		<div class="spinner-border text-warning" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
 	</div>
 	<!-- Loading -->
 
-	<!-- Scroll Container Test Start-->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent transition-navbar" id="mainNavbar">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#Background-Main">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#Event-Section">Events</a>
+					<a class="nav-item nav-link" href="#Schedule-Section">Schedule</a>
+					<a class="nav-item nav-link disabled" href="#">Disabled</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Scroll Container Start-->
 	<div id="Scroll-Container">
-		<!-- Sticky Container Test Start -->
+		<!-- Sticky Container Start -->
 		<div id="Sticky-Container">
 			<div id="Hero-Parent">
 				
@@ -51,51 +52,53 @@
 
 			<div id="Background-Main">
 				<video autoplay muted playsinline loop id="myVideo"><source src="./Video/manggahan-video.mp4" type="video/mp4"></video>
-			</div>
+				</div>
 
-			<div id="Overlay">
+				<div id="Overlay">
+
+				</div>
+		</div>
+			<!-- Sticky Container Test End -->
+			<!-- Page Section Start -->
+			<div id="intro-page">
+				<section id="Intro-Page-Section" class="container-fluid py-5 px-md-3">
+					<div class="row align-items-center">
+						<div id="Title-Text" class="col-md-8 col-sm-12 text-center text-md-start">
+							<h1 class="display-4 fw-bold mb-3 px-md-5">Welcome to Manggahan 2025</h1>
+							<p class="lead px-md-5">is an annual cultural, agricultural, and food festival held in Guimaras, Philippines, primarily celebrating the province's world-renowned mangoes and its importance to the local economy. The festival also commemorates Guimaras becoming an independent province and is held every May. It's a major event that draws both locals and tourists. </p>
+						</div>
+						<div id="Video-minimize-box" class="col-md-4 col-sm-12 text-center mt-4 mt-md-0 d-flex justify-content-center">
+							<img src="./Images/placeholder.jpg" id="video-box-area" class="img-fluid rounded shadow">
+						</div>
+					</div>
+				</section>
+				<section id="Event-Section" class="container-fluid">
+					<div class="row">
+						<h1>Event Title, Description</h1>
+
+					</div>
+				</section>
+				<section id="Schedule-Section" class="container-fluid">
+					<h2>Welcome to the Schedule Section</h2>
+				</section>
 			</div>
 
 		</div>
-		<!-- Sticky Container Test End -->
-				<!-- Page Section Start -->
-		<div id="intro-page" class="container-fluid">
-			<section id="Intro-Page-Section" class="container-fluid py-5 px-3">
-				<div class="row align-items-center">
-					<div id="Title-Text" class="col-md-8 col-sm-12 text-center text-md-start">
-						<h1 class="display-4 fw-bold mb-3 px-5">Welcome to Manggahan 2025</h1>
-						<p class="lead px-5">is an annual cultural, agricultural, and food festival held in Guimaras, Philippines, primarily celebrating the province's world-renowned mangoes and its importance to the local economy. The festival also commemorates Guimaras becoming an independent province and is held every May. It's a major event that draws both locals and tourists. </p>
-					</div>
-					<div id="Video-minimize-box" class="col-md-4 col-sm-12 text-center mt-4 mt-md-0 d-flex justify-content-center">
-						<img src="./Images/placeholder.jpg" id="video-box-area" class="img-fluid rounded shadow">
-					</div>
-				</div>
-			</section>
-			<section id="Event-Section" class="container-fluid">
-				<div class="row">
-					<h1>Event Title, Description</h1>
-					
-				</div>
-			</section>
-			<section id="Schedule-Section" class="container-fluid">
-			<h2>Welcome to the Schedule Section</h2>
-		</section>
-		</div>
-		
-	</div>
-	<!-- Scroll Container Test End -->
+		<!-- Scroll Container Test End -->
 
-	<footer>
-
-	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
-    <script src="./index.js"></script>
-
-</body>
+		<footer>
+			<div>
+			<h1>Hello</h1>
+			<p>Manggaman 2025 @ All Rights Reserved Copyrights | Terms & Conditions | Privacy & Disclaimer</p>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+		<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+		<script src="./index.js"></script>
+	</body>
 
 
-</html>
+	</html>
