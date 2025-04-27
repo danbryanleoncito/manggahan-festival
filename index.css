@@ -59,11 +59,11 @@ body {
 	position: absolute;
 	z-index: 1;
 	overflow: visible;
-	background-size: cover;
+	/*background-size: cover;
 	background-image: url("./Images/bush.png");
 	background-position: 50% 50%;
 	background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 #Background-Main {
