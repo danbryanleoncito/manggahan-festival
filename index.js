@@ -111,3 +111,54 @@ gsap.to("#mainNavbar", {
     markers:true
   }
 });
+
+// Cards
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  const image = card.querySelector('.card-thumbnail');
+  const video = card.querySelector('.card-hover-video');
+
+  if (!image || !video) return;
+
+  card.addEventListener('mouseenter', () => {
+    gsap.to(card, { scale: 1.05, duration: 0.5, ease: "power2.out" });
+
+    image.style.display = "none";
+    video.style.display = "block";
+    video.currentTime = 0;
+    video.play();
+  });
+
+  card.addEventListener('mouseleave', () => {
+    gsap.to(card, { scale: 1, duration: 0.5, ease: "power2.out" });
+
+    video.pause();
+    video.currentTime = 0;
+    video.style.display = "none";
+    image.style.display = "block";
+  });
+});
+
+// Schedule tabs
+
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const tabTarget = button.getAttribute('data-tab');
+
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    tabContents.forEach(content => {
+      if (content.id === tabTarget) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    });
+  });
+});
