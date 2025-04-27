@@ -60,7 +60,7 @@ body {
 	z-index: 1;
 	overflow: visible;
 	background-size: cover;
-	background-image: url("./Images/bush-side.png");
+	background-image: url("./Images/bush.png");
 	background-position: 50% 50%;
 	background-size: cover;
   background-repeat: no-repeat;
@@ -147,13 +147,46 @@ body {
   color: white;
 }
 
-#Intro-Parent img {
+#logo-image {
   
 	width: 50%;
   display: block;
 }
 
+/* Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  #logo-image {
+    margin-bottom: 150px;
+  }
+}
+
+#Intro-Page-Section {
+  padding-top: 80%; /* Mobile default */
+}
+
+/* small (≥576px) */
+@media (min-width: 576px) {
+  #Intro-Page-Section {
+    padding-top: 40%;
+  }
+}
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+  #Intro-Page-Section {
+    padding-top: 30%;
+  }
+}
+
+/* Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  #Intro-Page-Section {
+    padding-top: 20%;
+  }
+}
+
 #intro-page {
+
   background-color: #000000;
   color: white;
   display: flex;
@@ -163,6 +196,35 @@ body {
 /*  padding-top: 50px;*/
   /*padding-left: 50px;
   padding-right: 50px;*/
+}
+
+#welcome-bg-top {
+  position: absolute;
+  bottom: 0; /* only bottom */
+  left: 0;
+  width: 100%;
+  height: 100vh; /* limit the height */
+  object-fit: cover; /* optional, keeps proportions better */
+  z-index: 5;
+  pointer-events: none;
+}
+
+#welcome-bg-bottom {
+  position: absolute;
+  bottom: 0; /* only bottom */
+  left: 0;
+  width: 100%;
+  height: 120vh; /* limit the height */
+  object-fit: cover; /* optional, keeps proportions better */
+  z-index: 5;
+  pointer-events: none;
+}
+
+
+
+#gradient1 {
+  max-width: 100%;
+  height: auto;
 }
 
 #Schedule-Section {
@@ -183,23 +245,22 @@ body {
 
 
 #Title-Text {
-  top: 0%;
+  top: 20%;
   position: relative;
 }
 
 #Event-Section {
   padding-top: 50px;
-  /*  background-color: #000000;*/
-  color: white;
+    background-color: #ffffff;
+  color: black;
   display: flex;
   align-items: center;
 /*  justify-content: center;*/
   flex-direction: column;
-  background-image: url("./Images/gradient1.png");
+  /*background-image: url("./Images/gradient1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-position-y: 0%;
+  background-position: center;*/
 }
 
 #Event-Section h1 {
