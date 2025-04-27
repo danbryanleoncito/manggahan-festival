@@ -251,19 +251,20 @@ body {
 
 #Event-Section {
   padding-top: 50px;
-    background-color: #ffffff;
+    background-color: #000000;
   color: black;
   display: flex;
   align-items: center;
 /*  justify-content: center;*/
   flex-direction: column;
-  /*background-image: url("./Images/gradient1.png");
+  background-image: url("./Images/gradient1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;*/
+  background-position: center;
 }
 
 #Event-Section h1 {
+    color: white;
     position: relative;
     z-index: 1;  /* Ensure text appears on top of the background */
 }
