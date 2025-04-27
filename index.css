@@ -1,0 +1,341 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* or any background you want */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.transition-navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: none; /* Let GSAP handle animation */
+}
+
+body {
+  background-color: #000000;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#Scroll-Container {
+  position: relative;
+  width: 100%;
+  height: 260vh;
+/*  max-width: 1500px;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Sticky-Container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+#Overlay {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 6;
+	background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+#Background-Scroll {
+	width: 100%;
+	height: 100vh;
+	top: 0px;
+	position: absolute;
+	z-index: 1;
+	overflow: visible;
+	/*background-size: cover;
+	background-image: url("./Images/bush.png");
+	background-position: 50% 50%;
+	background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+#Background-Main {
+	width: 100%;
+	height: 150vh;
+	background-image: url("./Images/bg-picture.jpg");
+	background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 2;
+}
+
+
+#Hero-Parent {
+  color: white;
+	position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+
+#Intro-Parent {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  color: white;
+}
+
+#logo-image {
+  
+	width: 50%;
+  display: block;
+}
+
+/* Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  #logo-image {
+    margin-bottom: 150px;
+  }
+}
+
+#Intro-Page-Section {
+  padding-top: 80%; /* Mobile default */
+}
+
+/* small (≥576px) */
+@media (min-width: 576px) {
+  #Intro-Page-Section {
+    padding-top: 40%;
+  }
+}
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+  #Intro-Page-Section {
+    padding-top: 30%;
+  }
+}
+
+/* Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  #Intro-Page-Section {
+    padding-top: 20%;
+  }
+}
+
+#intro-page {
+
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+/*  background-image: url("./images/sidedesign.png");*/
+/*  padding-top: 50px;*/
+  /*padding-left: 50px;
+  padding-right: 50px;*/
+}
+
+#welcome-bg-top {
+  position: absolute;
+  bottom: 0; /* only bottom */
+  left: 0;
+  width: 100%;
+  height: 100vh; /* limit the height */
+  object-fit: cover; /* optional, keeps proportions better */
+  z-index: 5;
+  pointer-events: none;
+}
+
+#welcome-bg-bottom {
+  position: absolute;
+  bottom: 0; /* only bottom */
+  left: 0;
+  width: 100%;
+  height: 120vh; /* limit the height */
+  object-fit: cover; /* optional, keeps proportions better */
+  z-index: 5;
+  pointer-events: none;
+}
+
+
+
+#gradient1 {
+  max-width: 100%;
+  height: auto;
+}
+
+#Schedule-Section {
+  height: 100vh;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+/*  background-image: url("./images/sidedesign.png");*/
+}
+
+#video-box-area {
+  display: flex;
+  width: 300px;
+}
+
+
+#Title-Text {
+  top: 20%;
+  position: relative;
+}
+
+#Event-Section {
+  padding-top: 50px;
+    background-color: #000000;
+  color: black;
+  display: flex;
+  align-items: center;
+/*  justify-content: center;*/
+  flex-direction: column;
+  background-image: url("./Images/event-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Event-Section h1 {
+    color: white;
+    position: relative;
+    z-index: 1;  /* Ensure text appears on top of the background */
+}
+
+
+#Title-Text {
+  /*padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;*/
+}
+
+
+.card-media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 2;
+}
+
+
+/*Schedule tabs*/
+
+.tabs-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #f9c74f;
+  color: #f9c74f;
+}
+
+.tabs-content {
+  text-align: center;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
