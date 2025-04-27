@@ -257,7 +257,7 @@ body {
   align-items: center;
 /*  justify-content: center;*/
   flex-direction: column;
-  background-image: url("./Images/gradient3.png");
+  background-image: url("./Images/event-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
