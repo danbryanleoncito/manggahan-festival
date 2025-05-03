@@ -339,3 +339,9 @@ body {
 .tab-content.active {
   display: block;
 }
+
+
+.card-body {
+  color: black;
+}
+

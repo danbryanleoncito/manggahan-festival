@@ -1,236 +1,855 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Manggahan Festival</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="./index.css">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Manggahan Festival</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./index.css">
 
 
-	</head>
-	<body>
-		<!-- Loading -->
-		<div id="preloader">
-			<div class="spinner-border text-warning" role="status">
-				<span class="visually-hidden">Loading...</span>
-			</div>
+</head>
+<body>
+	<!-- Loading -->
+	<div id="preloader">
+		<div class="spinner-border text-warning" role="status">
+			<span class="visually-hidden">Loading...</span>
 		</div>
-		<!-- Loading -->
+	</div>
+	<!-- Loading -->
 
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent transition-navbar" id="mainNavbar">
-				<a class="navbar-brand" href="#">Navbar</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="#Background-Main">Home <span class="sr-only">(current)</span></a>
-						<a class="nav-item nav-link" href="#Event-Section">Events</a>
-						<a class="nav-item nav-link" href="#Schedule-Section">Schedule</a>
-						<a class="nav-item nav-link disabled" href="#">Disabled</a>
-					</div>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent transition-navbar" id="mainNavbar">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#Background-Main">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#Event-Section">Events</a>
+					<a class="nav-item nav-link" href="#Schedule-Section">Schedule</a>
+					<a class="nav-item nav-link disabled" href="#">Disabled</a>
 				</div>
-			</nav>
-		</header>
-
-		<!-- Scroll Container Start-->
-		<div id="Scroll-Container">
-			<!-- Sticky Container Start -->
-			<div id="Sticky-Container">
-
-				<div id="Hero-Parent">
-					
-				</div>
-
-				<div id="Intro-Parent">
-					<img src="./Images/front.png" id="logo-image" alt="Logo" class="img-fluid p-3 p-md-5">
-					<!-- <img src="./Images/welcome-bg-top.png" id="welcome-bg-top"> -->
-				</div>
-				<div id="Background-Scroll">
-
-				</div>
-
-				<div id="Background-Main">
-					
-					<video autoplay muted playsinline loop id="myVideo"><source src="./Video/manggahan-video.mp4" type="video/mp4"></video>
-
-					</div>
-
-					<div id="Overlay">
-
-					</div>
 			</div>
-				<!-- Sticky Container Test End -->
+		</nav>
+	</header>
 
-				<!-- Page Section Start -->
-				<div id="intro-page">
-					<img src="./Images/welcome-bg-bottom.png" id="welcome-bg-bottom">
-					<section id="Intro-Page-Section" class="container-fluid px-md-3">
-						
-						<div class="row align-items-center">
-							<div id="Title-Text" class="col-md-8 col-sm-12 text-center text-md-start">
-								<h1 class="display-4 fw-bold mb-3 px-md-5">Welcome to Manggahan 2025</h1>
-								<p class="lead px-md-5">is an annual cultural, agricultural, and food festival held in Guimaras, Philippines, primarily celebrating the province's world-renowned mangoes and its importance to the local economy. The festival also commemorates Guimaras becoming an independent province and is held every May. It's a major event that draws both locals and tourists. </p>
-							</div>
-							<div id="Video-minimize-box" class="col-md-4 col-sm-12 text-center mt-4 mt-md-0 d-flex justify-content-center">
-								<img src="./Images/placeholder.jpg" id="video-box-area" class="img-fluid rounded shadow">
-							</div>
+	<!-- Scroll Container Start-->
+	<div id="Scroll-Container">
+		<!-- Sticky Container Start -->
+		<div id="Sticky-Container">
+
+			<div id="Hero-Parent">
+
+			</div>
+
+			<div id="Intro-Parent">
+				<img src="./Images/front.png" id="logo-image" alt="Logo" class="img-fluid p-3 p-md-5">
+				<!-- <img src="./Images/welcome-bg-top.png" id="welcome-bg-top"> -->
+			</div>
+			<div id="Background-Scroll">
+
+			</div>
+
+			<div id="Background-Main">
+
+				<video autoplay muted playsinline loop id="myVideo"><source src="./Video/manggahan-video.mp4" type="video/mp4"></video>
+
+				</div>
+
+				<div id="Overlay">
+
+				</div>
+			</div>
+			<!-- Sticky Container Test End -->
+
+			<!-- Page Section Start -->
+			<div id="intro-page">
+				<img src="./Images/welcome-bg-bottom.png" id="welcome-bg-bottom">
+				<section id="Intro-Page-Section" class="container-fluid px-md-3">
+
+					<div class="row align-items-center">
+						<div id="Title-Text" class="col-md-8 col-sm-12 text-center text-md-start">
+							<h1 class="display-4 fw-bold mb-3 px-md-5">Welcome to Manggahan 2025</h1>
+							<p class="lead px-md-5">is an annual cultural, agricultural, and food festival held in Guimaras, Philippines, primarily celebrating the province's world-renowned mangoes and its importance to the local economy. The festival also commemorates Guimaras becoming an independent province and is held every May. It's a major event that draws both locals and tourists. </p>
 						</div>
-					</section>
-					<!-- <img src="./Images/gradient2.png" id="gradient1"> -->
-					<section id="Event-Section" class="container-fluid py-5">
-						<h1 class="text-center mb-5">Event Section</h1>
-
-						<div class="row justify-content-center gx-4 gy-5">
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
-
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
-
-							<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-								<div class="card w-100 overflow-hidden position-relative">
-									<div class="card-media-wrapper position-relative" style="width: 100%; height: 200px;">
-										<img src="./Images/gradient.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
-										<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted playsinline loop style="object-fit: cover; display: none;">
-											<source src="./Video/sample.mp4" type="video/mp4">
-											</video>
-										</div>
-										<div class="card-body">
-											<p class="card-text">Some text inside the card...</p>
-										</div>
-									</div>
-								</div>
+						<div id="Video-minimize-box" class="col-md-4 col-sm-12 text-center mt-4 mt-md-0 d-flex justify-content-center">
+							<img src="./Images/placeholder.jpg" id="video-box-area" class="img-fluid rounded shadow">
 						</div>
-					</section>
-					<section id="Schedule-Section" class="container-fluid">
-						<h2>Welcome to the Schedule Section</h2>
-						<div class="tabs-menu">
-							<button class="tab-button active" data-tab="day1">Day 1</button>
-							<button class="tab-button" data-tab="day2">Day 2</button>
-							<button class="tab-button" data-tab="day3">Day 3</button>
-						</div>
+					</div>
+				</section>
+				<!-- <img src="./Images/gradient2.png" id="gradient1"> -->
+				<section class="container-fluid py-5" id="Festival-Tabs">
+					<h1 class="text-center mb-4">Festival Events & Schedule</h1>
 
-						<!-- Tabs Content -->
-						<div class="tabs-content">
-							<div class="tab-content active" id="day1">
-								<h3>Day 1 Events</h3>
-								<p>All the activities happening on Day 1.</p>
+					<div class="tabs-menu text-center mb-4">
+						<button class="tab-button active" data-tab="day1">Day 1</button>
+						<button class="tab-button" data-tab="day2">Day 2</button>
+						<button class="tab-button" data-tab="day3">Day 3</button>
+						<button class="tab-button" data-tab="day4">Day 4</button>
+						<button class="tab-button" data-tab="day5">Day 5</button>
+						<button class="tab-button" data-tab="day6">Day 6</button>
+						<button class="tab-button" data-tab="day7">Day 7</button>
+						<button class="tab-button" data-tab="day8">Day 8</button>
+						<button class="tab-button" data-tab="day9">Day 9</button>
+						<button class="tab-button" data-tab="day10">Day 10</button>
+						<!-- Add more buttons as needed -->
+					</div>
+
+					<div class="tabs-content">
+
+						<!-- Day 1 -->
+						<div class="tab-content active" id="day1">
+							<!-- Event Section -->
+							<section class="event-block">
+								<h3 class="text-white">Day 1 Events – May 16 (Friday)</h3>
+								<div class="row justify-content-center gx-4 gy-5">
+									<!-- Sample card -->
+									<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/imbukada.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">IMBUKADA</h3>
+													<p class="card-text">4:00 pm - 5:00 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/Volleyball.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">SPORTS EVENT</h3>
+													<p class="card-text"><strong>Volleyball & Basketball</strong><br>4:00 pm - 10:00 pm<br>
+													In front of Kapitolyo Probinsyal sang Guimaras</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">OPENING OF REGIONAL AGRI-ECO TRADE FAIR</h4>
+													<p class="card-text">5:00 pm - 5:30 pm<br>Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">CEREMONIAL LAUNCH OF MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">5:30 pm - 6:00 pm<br>Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/street-food.webp" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">OPENING OF PANABOR SA ISLA FOOD FEST</h4>
+													<p class="card-text">6:00 pm<br>Food Street Area</p>
+												</div>
+											</div>
+										</div>
+										<!-- Repeat more cards -->
+									</div>
+								</section>
+
+								<!-- Schedule Section -->
+								<section class="schedule-block mt-5">
+									<h3 class="text-black">Day 1 Schedule</h3>
+									<p class="text-black">Detailed schedule of activities for Day 1 goes here.</p>
+									<img src="./Images/music-festival/Ely-Buendia.jpg" class="img-fluid">
+								</section>
 							</div>
 
+							<!-- Day 2 -->
 							<div class="tab-content" id="day2">
-								<h3>Day 2 Events</h3>
-								<p>All the activities happening on Day 2.</p>
+								<!-- Event Section -->
+								<section class="event-block">
+									<h3 class="text-white">Day 2 Events - May 17 (Saturday)</h3>
+									<div class="row justify-content-center gx-4 gy-5">
+										<!-- Sample card -->
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+											<div class="card w-100 overflow-hidden position-relative">
+												<div class="card-media-wrapper" style="height: 200px;">
+													<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+													<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+														<source src="./Video/sample.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="card-body">
+														<h4 class="card-text">REGIONAL AGRI-ECO TRADE FAIR</h4>
+														<p class="card-text">8:00 am - 10:00 pm<br>Trade Fair area</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">9:00 am - 11:15 am;<br>
+														2:00 pm - 4:15 pm<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/basketball.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">SPORTS EVENT</h3>
+													<p class="card-text"><strong>Volleyball & Basketball</strong><br>4:00 pm - 10:00 pm<br>
+													In front of Kapitolyo Probinsyal sang Guimaras</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/street-food2.webp" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PANABOR SA ISLA:<br>Manggahan Food Fest</h4>
+													<p class="card-text">5:00 pm - onwards<br>Food Street Area</p>
+												</div>
+											</div>
+										</div>
+											<!-- Repeat more cards -->
+										</div>
+									</section>
+
+									<!-- Schedule Section -->
+									<section class="schedule-block mt-5">
+										<h3 class="text-black">Day 2 Schedule</h3>
+										<p class="text-black">Detailed schedule of activities for Day 2 goes here.</p>
+										<img src="./Images/music-festival/Andrew-E.jpg" class="img-fluid">
+									</section>
+								</div>
+
+								<!-- Day 3 etc... -->
+								<div class="tab-content" id="day3">
+									<!-- Event Section -->
+								<section class="event-block">
+									<h3 class="text-white">Day 3 Events - May 18 (Sunday)</h3>
+									<div class="row justify-content-center gx-4 gy-5">
+										<!-- Sample card -->
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+											<div class="card w-100 overflow-hidden position-relative">
+												<div class="card-media-wrapper" style="height: 200px;">
+													<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+													<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+														<source src="./Video/sample.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="card-body">
+														<h4 class="card-text">REGIONAL AGRI-ECO TRADE FAIR</h4>
+														<p class="card-text">8:00 am - 10:00 pm<br>Trade Fair area</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">9:00 am - 11:15 am;<br>
+														2:00 pm - 4:15 pm<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/kabataan-day.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">KABATAAN DAY</h4>
+													<p class="card-text">2:00 pm - 7:00 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/basketball.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">SPORTS EVENT</h3>
+													<p class="card-text"><strong>Volleyball & Basketball</strong><br>4:00 pm - 10:00 pm<br>
+													In front of Kapitolyo Probinsyal sang Guimaras</p>
+												</div>
+											</div>
+										</div>
+
+										
+											<!-- Repeat more cards -->
+										</div>
+									</section>
+									<!-- Schedule Section -->
+									<section class="schedule-block mt-5">
+										<h3 class="text-black">Day 3 Schedule</h3>
+										<p class="text-black">Detailed schedule of activities for Day 3 goes here.</p>
+										<img src="./Images/music-festival/VXON.jpg" class="img-fluid">
+									</section>
+								</div>
+
+								<!-- Day 4 -->
+							<div class="tab-content" id="day4">
+								<!-- Event Section -->
+								<section class="event-block">
+									<h3 class="text-white">Day 4 Events - May 19 (Monday)</h3>
+									<div class="row justify-content-center gx-4 gy-5">
+										<!-- Sample card -->
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+											<div class="card w-100 overflow-hidden position-relative">
+												<div class="card-media-wrapper" style="height: 200px;">
+													<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+													<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+														<source src="./Video/sample.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="card-body">
+														<h4 class="card-text">REGIONAL AGRI-ECO TRADE FAIR</h4>
+														<p class="card-text">8:00 am - 10:00 pm<br>Trade Fair area</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">9:00 am - 11:15 am;<br>
+														2:00 pm - 4:15 pm<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/basketball.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">SPORTS EVENT</h3>
+													<p class="card-text"><strong>Volleyball & Basketball</strong><br>4:00 pm - 10:00 pm<br>
+													In front of Kapitolyo Probinsyal sang Guimaras</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/street-food2.webp" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PANABOR SA ISLA:<br>Manggahan Food Fest</h4>
+													<p class="card-text">5:00 pm - onwards<br>Food Street Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/Mr-Guimaras.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MR. GUIMARAS</h4>
+													<p class="card-text">5:00 pm - 10:00 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+											<!-- Repeat more cards -->
+										</div>
+									</section>
+
+									<!-- Schedule Section -->
+									<section class="schedule-block mt-5">
+										<h3 class="text-black">Day 4 Schedule</h3>
+										<p class="text-black">Detailed schedule of activities for Day 4 goes here.</p>
+										<img src="./Images/music-festival/Andrew-E.jpg" class="img-fluid">
+									</section>
+								</div>
+
+							<!-- Day 5 -->
+							<div class="tab-content" id="day5">
+								<!-- Event Section -->
+								<section class="event-block">
+									<h3 class="text-white">Day 5 Events - May 20 (Tuesday)</h3>
+									<div class="row justify-content-center gx-4 gy-5">
+										<!-- Sample card -->
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+											<div class="card w-100 overflow-hidden position-relative">
+												<div class="card-media-wrapper" style="height: 200px;">
+													<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+													<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+														<source src="./Video/sample.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="card-body">
+														<h4 class="card-text">REGIONAL AGRI-ECO TRADE FAIR</h4>
+														<p class="card-text">8:00 am - 10:00 pm<br>Trade Fair area</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/serbisyo-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: contain;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">GOVERNMENT SERVICES FAIR <br>(People's Day)</h4>
+													<p class="card-text">9:00 am - 5:00 pm<br>
+													Provincial Capitol Grounds</p>
+												</div>
+											</div>
+										</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">9:00 am - 11:15 am;<br>
+														2:00 pm - 4:15 pm<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/Mango-Beef-Bulalo.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PANABOR SA ISLA</h4>
+													<p class="card-text">9:00 am - 5:00 pm<br>
+													Food Fest Prime Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/farmer-fisherfolk-day.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">FARMERS AND FISHERFOLKS DAY<BR>BUGAL Awarding</h4>
+													<p class="card-text">9:00 am - 5:00 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/basketball.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">SPORTS EVENT</h3>
+													<p class="card-text"><strong>Volleyball & Basketball</strong><br>4:00 pm - 10:00 pm<br>
+													In front of Kapitolyo Probinsyal sang Guimaras</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/street-food2.webp" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PANABOR SA ISLA:<br>Manggahan Food Fest</h4>
+													<p class="card-text">5:00 pm - onwards<br>Food Street Area</p>
+												</div>
+											</div>
+										</div>
+
+										
+											<!-- Repeat more cards -->
+										</div>
+									</section>
+
+									<!-- Schedule Section -->
+									<section class="schedule-block mt-5">
+										<h3 class="text-black">Day 5 Schedule</h3>
+										<p class="text-black">Detailed schedule of activities for Day 5 goes here.</p>
+										<img src="./Images/music-festival/Andrew-E.jpg" class="img-fluid">
+									</section>
 							</div>
 
-							<div class="tab-content" id="day3">
-								<h3>Day 3 Events</h3>
-								<p>All the activities happening on Day 3.</p>
+							<!-- Day 6 -->
+							<div class="tab-content" id="day6">
+								<!-- Event Section -->
+								<section class="event-block">
+									<h3 class="text-white">Day 6 Events - May 21 (Wednesday)</h3>
+									<div class="row justify-content-center gx-4 gy-5">
+										<!-- Sample card -->
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+											<div class="card w-100 overflow-hidden position-relative">
+												<div class="card-media-wrapper" style="height: 200px;">
+													<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+													<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+														<source src="./Video/sample.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="card-body">
+														<h4 class="card-text">REGIONAL AGRI-ECO TRADE FAIR</h4>
+														<p class="card-text">8:00 am - 10:00 pm<br>Trade Fair area</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/serbisyo-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: contain;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">GOVERNMENT SERVICES FAIR <br>(People's Day)</h4>
+													<p class="card-text">9:00 am - 5:00 pm<br>
+													Provincial Capitol Grounds</p>
+												</div>
+											</div>
+										</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">9:00 am - 11:15 am;<br>
+														2:00 pm - 4:15 pm<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/iwag.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: contain;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">IWAG DAY</h3>
+													<p class="card-text">3:00 pm - 9:00 pm<br>
+													Food Fest Prime Area</p>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/street-food2.webp" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PANABOR SA ISLA:<br>Manggahan Food Fest</h4>
+													<p class="card-text">5:00 pm - onwards<br>Food Street Area</p>
+												</div>
+											</div>
+										</div>
+
+										
+											<!-- Repeat more cards -->
+										</div>
+									</section>
+
+									<!-- Schedule Section -->
+									<section class="schedule-block mt-5">
+										<h3 class="text-black">Day 6 Schedule</h3>
+										<p class="text-black">Detailed schedule of activities for Day 6 goes here.</p>
+										<img src="./Images/music-festival/angeline-quinto.jpg" class="img-fluid">
+									</section>
 							</div>
-						</div>
-					</section>
-					<footer>
-				<div>
-				<p>Manggaman 2025 @ All Rights Reserved Copyrights | Terms & Conditions | Privacy & Disclaimer</p>
-				</div>
-			</footer>
+
+							<!-- Day 7 -->
+							<div class="tab-content" id="day7">
+								<!-- Event Section -->
+								<section class="event-block">
+									<h3 class="text-white">Day 7 Events - May 22 (Thursday)</h3>
+									<div class="row justify-content-center gx-4 gy-5">
+										<!-- Sample card -->
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+											<div class="card w-100 overflow-hidden position-relative">
+												<div class="card-media-wrapper" style="height: 200px;">
+													<img src="./Images/opening-trade-fair.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+													<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+														<source src="./Video/sample.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="card-body">
+														<h4 class="card-text">REGIONAL AGRI-ECO TRADE FAIR</h4>
+														<p class="card-text">8:00 am - 10:00 pm<br>Trade Fair area</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/thanksgiving-mass.jpg	" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: contain;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">THANKSGIVING MASS</h3>
+													<p class="card-text">8:00 am - 9:00 am<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+											<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/eat-all-you-can.png" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">MANGO-EAT-ALL-YOU-CAN</h4>
+													<p class="card-text">9:00 am - 11:15 am;<br>
+														2:00 pm - 4:15 pm<br>
+													Trade Fair Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/streetdancing.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h3 class="card-text">STREETDANCING COMPETITION</h3>
+													<p class="card-text">4:00 pm - 6:00 pm<br>
+													Jordan Food Terminal to Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/street-food2.webp" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PANABOR SA ISLA:<br>Manggahan Food Fest</h4>
+													<p class="card-text">5:00 pm - onwards<br>Food Street Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/anniversary.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">ANNIVERSARY PROGRAM</h4>
+													<p class="card-text">6:00 pm - 7:00 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/provincehood-night.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">PROVINCEHOOD NIGHT</h4>
+													<p class="card-text">7:00 pm - 9:00 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+										<div class="card w-100 overflow-hidden position-relative">
+											<div class="card-media-wrapper" style="height: 200px;">
+												<img src="./Images/fireworks.jpg" class="card-thumbnail img-fluid w-100 h-100" style="object-fit: cover;">
+												<video class="card-hover-video position-absolute top-0 start-0 w-100 h-100" muted loop style="object-fit: cover; display: none;">
+													<source src="./Video/sample.mp4" type="video/mp4">
+													</video>
+												</div>
+												<div class="card-body">
+													<h4 class="card-text">FIREWORKS DISPLAY</h4>
+													<p class="card-text">9:00 pm - 9:30 pm<br>Main Events Area</p>
+												</div>
+											</div>
+										</div>
+
+										
+											<!-- Repeat more cards -->
+										</div>
+									</section>
+
+									<!-- Schedule Section -->
+									<section class="schedule-block mt-5">
+										<h3 class="text-black">Day 7 Schedule</h3>
+										<p class="text-black">Detailed schedule of activities for Day 7 goes here.</p>
+										<img src="./Images/music-festival/lola-amour.jpg" class="img-fluid">
+									</section>
+							</div>
+
+							</div>
+						</section>
+
+						<footer>
+							<div>
+								<p>Manggaman 2025 @ All Rights Reserved Copyrights | Terms & Conditions | Privacy & Disclaimer</p>
+							</div>
+						</footer>
+
+					</div>
 
 				</div>
 
-			</div>
-
-			<!-- Scroll Container Test End -->
-
-			
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-			<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
-			<script src="./index.js"></script>
-		</body>
+				<!-- Scroll Container Test End -->
 
 
-		</html>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+				<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+				<script src="./index.js"></script>
+			</body>
+
+
+			</html>
