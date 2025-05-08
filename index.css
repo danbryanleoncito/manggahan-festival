@@ -345,3 +345,11 @@ body {
   color: black;
 }
 
+#carouselExampleAutoplaying {
+  justify-content: center;
+  width: 500px;
+}
+
+.schedule-block img {
+  width: 500px;
+}
