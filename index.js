@@ -1,9 +1,9 @@
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smoothWheel: true,
-  smoothTouch: false,
-});
+// const lenis = new Lenis({
+//   duration: 1.2,
+//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+//   smoothWheel: true,
+//   smoothTouch: false,
+// });
 
 function raf(time) {
   lenis.raf(time);
@@ -52,7 +52,7 @@ gsap.to("#Intro-Parent", {
   opacity: 1,
   scrollTrigger: {
     trigger: "#Sticky-Container",
-    start: "bottom 70%",
+    start: "bottom 55%",
     end: "bottom +=260vh",
     scrub: true,
     // markers:true
@@ -101,64 +101,104 @@ window.addEventListener('load', () => {
 });
 
 gsap.to("#mainNavbar", {
-  backdropFilter: "blur(0px)",
-  backgroundColor: "rgba(255, 255, 255, 0)",
+  backgroundColor: "rgba(0, 0, 0, 1)", // black, fully opaque at end
   scrollTrigger: {
     trigger: "#Sticky-Container",
-    start: "top 10%",
+    start: "top top",
     end: "bottom 70%",
     scrub: true,
-    markers:true
+    // markers: true
   }
 });
 
+
 // Cards
 
-const cards = document.querySelectorAll('.card');
+// Uncomment below to start hover video for each card
 
-cards.forEach(card => {
-  const image = card.querySelector('.card-thumbnail');
-  const video = card.querySelector('.card-hover-video');
+// const cards = document.querySelectorAll('.card');
 
-  if (!image || !video) return;
+// cards.forEach(card => {
+//   const image = card.querySelector('.card-thumbnail');
+//   const video = card.querySelector('.card-hover-video');
 
-  card.addEventListener('mouseenter', () => {
-    gsap.to(card, { scale: 1.05, duration: 0.5, ease: "power2.out" });
+//   if (!image || !video) return;
 
-    image.style.display = "none";
-    video.style.display = "block";
-    video.currentTime = 0;
-    video.play();
-  });
+//   card.addEventListener('mouseenter', () => {
+//     gsap.to(card, { scale: 1.05, duration: 0.5, ease: "power2.out" });
 
-  card.addEventListener('mouseleave', () => {
-    gsap.to(card, { scale: 1, duration: 0.5, ease: "power2.out" });
+//     image.style.display = "none";
+//     video.style.display = "block";
+//     video.currentTime = 0;
+//     video.play();
+//   });
 
-    video.pause();
-    video.currentTime = 0;
-    video.style.display = "none";
-    image.style.display = "block";
-  });
-});
+//   card.addEventListener('mouseleave', () => {
+//     gsap.to(card, { scale: 1, duration: 0.5, ease: "power2.out" });
+
+//     video.pause();
+//     video.currentTime = 0;
+//     video.style.display = "none";
+//     image.style.display = "block";
+//   });
+// });
 
 // Schedule tabs
 
-const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-content');
+// const tabButtons = document.querySelectorAll('.tab-button');
+// const tabContents = document.querySelectorAll('.tab-content');
 
-tabButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const tabTarget = button.getAttribute('data-tab');
+// tabButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const tabTarget = button.getAttribute('data-tab');
 
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
+//     tabButtons.forEach(btn => btn.classList.remove('active'));
+//     button.classList.add('active');
 
-    tabContents.forEach(content => {
-      if (content.id === tabTarget) {
-        content.classList.add('active');
-      } else {
-        content.classList.remove('active');
+//     tabContents.forEach(content => {
+//       if (content.id === tabTarget) {
+//         content.classList.add('active');
+//       } else {
+//         content.classList.remove('active');
+//       }
+//     });
+//   });
+// });
+
+
+// Swipe function
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Swiper
+  const swiper = new Swiper('.mySwiper', {
+    loop: false,
+    spaceBetween: 30,
+    allowTouchMove: true,
+    autoHeight: true,
+    on: {
+      slideChange: () => {
+        const activeIndex = swiper.activeIndex;
+        updateActiveTabButton(activeIndex);
       }
+    }
+  });
+
+  // Tab buttons
+  const tabButtons = document.querySelectorAll('.tab-button');
+
+  // Tab button click → slide to corresponding tab
+  tabButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      swiper.slideTo(index);
+      updateActiveTabButton(index);
     });
   });
+
+  // Sync function
+  function updateActiveTabButton(index) {
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    if (tabButtons[index]) {
+      tabButtons[index].classList.add('active');
+    }
+  }
 });

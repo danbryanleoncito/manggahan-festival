@@ -12,10 +12,20 @@
 }
 
 .transition-navbar {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: none; /* Let GSAP handle animation */
+  background-color: rgba(0, 0, 0, 0); /* fully transparent black at start */
+  transition: background-color 0.3s ease;
 }
+
+.transition-navbar .nav-link,
+.transition-navbar .navbar-brand {
+  color: white !important;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 
 body {
   background-color: #000000;
@@ -59,11 +69,11 @@ body {
 	position: absolute;
 	z-index: 1;
 	overflow: visible;
-	/*background-size: cover;
+	background-size: cover;
 	background-image: url("./Images/bush.png");
 	background-position: 50% 50%;
 	background-size: cover;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 }
 
 #Background-Main {
@@ -307,8 +317,10 @@ body {
 
 .tabs-menu {
   display: flex;
+  flex-wrap: wrap;   /* allow buttons to wrap */
   justify-content: center;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .tab-button {
@@ -321,6 +333,9 @@ body {
   color: #333;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
+  flex: 1 1 auto;    /* allow them to shrink or grow */
+  min-width: 80px;   /* set a reasonable min width */
+  max-width: 120px;  /* optional: prevent huge buttons */
 }
 
 .tab-button.active {
@@ -332,13 +347,14 @@ body {
   text-align: center;
 }
 
-.tab-content {
+/*.tab-content {
   display: none;
 }
-
+*/
 .tab-content.active {
   display: block;
 }
+
 
 
 .card-body {
@@ -350,6 +366,20 @@ body {
   width: 500px;
 }
 
+#carouselExampleAutoplaying2 {
+  justify-content: center;
+  width: 500px;
+}
+
 .schedule-block img {
   width: 500px;
+}
+
+/* swipe function for css */
+
+.tab-content {
+  width: 100%;
+}
+.swiper-slide {
+  width: 100%;
 }
